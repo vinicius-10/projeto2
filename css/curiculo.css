@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;;
+}
+
+html{
+    font-size: 20px;
+}
+
+body{
+    background-color: #F5FFDB;
+    color: #474747;
+}
+
+a{
+    text-decoration: none;
+    color: #6d028d;
+    font-weight: 700;
+}
+
+a:hover{
+    color: #9b00ff;
+    text-decoration: underline;
+}
+
+a:visited{
+    color: #cc3df8;
+}
+
+a:active{
+    color: #ff00ff;
+}
+
+#graduacao{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#ensino-medio{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.content{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border-top: black solid 2px;
+}
+
+img{
+    display: block;
+    margin: 20px auto;
+}
+
+img[src="figs/perfil.jpg"]{
+    display: block;
+    margin: 30px auto;
+    border: 2px black solid;
+    width: 8rem;
+}
+
+li{
+    font-style: italic;
+    margin: 10px 0px 0px 50px;
+    display:flex;
+
+    img{
+        margin: 0px 10px;
+        width: 1.25rem;
+    }
+}
+
+dd{
+    font-style: oblique;
+}
+
+dt{
+    margin: 10px 0px;
+}
+
+h2{
+    color:black;
+    margin: 0px 0px 30px 0px;
+}
+
+header{
+    font-size: 1.1rem;
+    img{
+        margin: 0px;
+    }
+}

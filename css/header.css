@@ -1,0 +1,89 @@
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: var(--fundo-card);
+    
+    padding: 10px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    border-bottom: 2px solid var(--borda);
+
+    .header-container{
+        width: 100%;
+        max-width: var(--max-width);
+        
+
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        .logo {
+            display: flex;         
+            align-items: center;   
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            gap: 10px;         
+            font-weight: bold;    
+
+            .logo-image {
+                width: 5rem;         
+                height: auto;
+            }
+
+            .logo-text {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+
+        nav {
+            ul {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                gap:20px
+            }
+
+            .btn-sair {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                gap: 8px; 
+                
+                border: 2px solid var(--cor-ods); 
+                background-color: transparent;
+                color: var(--cor-ods); 
+                
+                padding: 8px 20px;
+                border-radius: 8px; 
+                font-weight: 600;
+                
+                transition: all 0.2s ease-in-out, transform 0.2s ease, box-shadow 0.2s ease;
+
+            
+                .material-symbols-outlined {
+                    
+                    color: inherit;    
+                }
+
+                &:hover {
+                    background-color: var(--cor-ods-hover); 
+                    color: var(--fundo-card);
+                    
+                    transform: scale(1.07);
+                    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+                }
+            }
+
+           
+            
+        }
+    }
+    
+}
+

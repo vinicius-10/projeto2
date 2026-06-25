@@ -1,0 +1,89 @@
+@import url('variables.css');
+@import url('header.css');
+@import url('footer.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body, html {
+  font-family: var(--fonte-principal);
+  font-size: 62.5%;
+  font-optical-sizing: var(--font-optical-sizing);
+  font-weight: var(--font-weight);
+  font-style: var(--font-style);
+  background-color: var(--fundo-canvas); 
+  min-height: 100vh;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+main{
+  flex: 1;
+
+}
+
+
+.fontGig{
+  font-size: 4rem;
+}
+
+
+.fontBig{
+  font-size: 3rem;
+}
+
+.fontMedium{
+  font-size: 2.5rem;
+}
+
+.fontNormal{
+  font-size: 2rem;
+}
+
+.fontSmall{
+  font-size: 1.5rem;
+}
+
+.fontTiny{
+  font-size: 1.3rem;
+}
+
+p{
+  line-height: 2.2rem;
+  margin-top: 10px;
+  color: var(--texto-principal)
+}
+
+.colorODS{
+  color: var(--cor-ods);
+}
+
+.colorPrimary{
+  color: var(--texto-principal);
+}
+
+.colorSecondary{
+  color: var(--texto-secundario);
+}
+
+.flexInline{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+button:hover{
+  transform: scale(1.02);
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partência</title>
+
+    <link rel="stylesheet" href="css/styles.css"> 
+    <link rel="stylesheet" href="css/main-landingPage.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="imagens/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="imagens/favicon/favicon16.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="imagens/favicon/favicon32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="imagens/favicon/favicon180.png" sizes="180x180">
+    
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=logout">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="landingPage.html" class="logo">
+                <img src="imagens/logo.svg" alt="Logo da Partência" class="logo-image"> 
+                
+                <div class="logo-text fontGig">
+                    <span class="colorPrimary">Part</span>
+                    <span class="colorODS">ência</span>
+                </div>
+            </a>
+            
+            <nav>
+                <ul>
+                    <li>
+                    <a href="index.html" class="btn-sair fontNormal">
+                        <i class="fa-regular fa-user"></i>
+                        ADM
+                    </a>
+                    </li>
+                    <li>
+                    <a href="index.html" class="btn-sair fontNormal">
+                        <span class="material-symbols-outlined">logout</span> 
+                        Sair
+                    </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="main-container">
+            <section class="welkome">
+                <div class="welkome-text">
+                    <h1 class="fontGig">Bem-vindo ao &nbsp;<span class="colorPrimary">Part</span><span class="colorODS">ência</span> </h1>
+                    <p class="fontNormal">
+                        Conecte-se com monitores e alunos e fortaleça sua jornada acadêmica.
+                    </p>
+                </div>
+            </section>
+
+            <section class="forms-container">
+
+                <div class="panel panel-login" id="panel-login">
+                    <h2 class="fontMedium">Faça seu login</h2>
+
+                    <form id="form-login" action="landingPage.html">
+                        <div class="campos fontNormal">
+                            <label class="campo">
+                            E-mail
+                            <input type="email" placeholder="seu@email.com">
+                            </label>
+                            <label class="campo">
+                            Senha
+                            <input type="password" placeholder="••••••••">
+                            </label>
+                        </div>
+                        <button class="btn-submit fontSmall">Entrar</button>
+                    </form>
+                </div>
+
+                <div class="panel panel-register opacity-0" id="panel-register">
+                    <h2 class="fontMedium">Crie sua conta</h2>
+
+                    <form id="form-register" action="index.html">
+                        <div class="campos fontSmall">
+                            
+                            <label class="campo">
+                                E-mail
+                                <input type="email" placeholder="seu@email.com">
+                            </label>
+
+                            <label class="campo">
+                                Nome completo
+                                <input type="text" placeholder="Seu nome completo">
+                            </label>
+
+                            <label class="campo">
+                                Instituição de ensino
+                                <input type="text" placeholder="UTFPR-CP, E.E. Leonardo, etc">
+                            </label>
+
+                            <label class="campo">
+                                Escolaridade
+                                <select>
+                                    <option value="" disabled selected>Selecione</option>
+                                    <option>Ensino médio</option>
+                                    <option>Graduação</option>
+                                    <option>Pós-graduação</option>
+                                    <option>Mestrado</option>
+                                    <option>Doutorado</option>
+                                </select>
+                            </label>
+
+                            <label class="campo">
+                                Curso
+                                <input type="text" placeholder="Nome do curso">
+                            </label>
+
+                            <label class="campo">
+                                Ano de ingresso
+                                <input type="number" placeholder="Ex: 2023" min="2000" max="2099">
+                            </label>
+
+                            <label class="campo">
+                                Senha
+                                <input type="password" placeholder="••••••••">
+                            </label>
+
+                            <label class="campo">
+                                Confirmar senha
+                                <input type="password" placeholder="••••••••">
+                            </label>
+                            
+                        </div>
+                        <button class="btn-submit fontSmall" type="submit">Cadastrar</button>
+                    </form>
+                </div>
+
+                <div class="slider fontNormal" id="slider">
+
+                    <div class="slider-text visible" id="text-register">
+                        <h2>Não tem conta?</h2>
+                        <p>Cadastre-se e acesse<br>todos os recursos da plataforma</p>
+                        <button class="btn-trocar fontSmall" id="btn-register">Cadastrar</button>
+                    </div>
+
+                    <div class="slider-text" id="text-login">
+                        <h2>Já tem conta?</h2>
+                        <p>Faça login e continue<br>acessando a plataforma</p>
+                        <button class="btn-trocar fontSmall" id="btn-login">Login</button>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <span class="brand-logo"><img src="imagens/logo.svg" alt="Logo da Partência" class="logo-image"></span>
+
+                <div class="brand-text">
+                    <h1 class="fontMedium">Partência</h1>
+                    <p class="fontSmall">Conectando pessoas, partilhando experiências.</p>
+                    <p class="fontSmall">ODS 4 &mdash; Educação de Qualidade</p>
+                    <p class="fontTiny copyright">&copy; 2026 Partência. Todos os direitos reservados.</p>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <h1 class="fontNormal">Desenvolvido por Vinicius Dias</h1>
+
+                <ul>
+                    <li>
+                        <a href="curiculo.html" target="_blank" class="fontSmall">
+                            <i class="fa-regular fa-address-book"></i>
+                            Currículo vitae
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/vinicius-dias-dev/" target="_blank" class="fontSmall">
+                            <i class="fa-brands fa-linkedin"></i>
+                            linkedin.com/in/vinicius-dias-dev
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:vinicius.2023@alunos.utfpr.edu.br" class="fontSmall">
+                            <i class="fa-solid fa-envelope"></i>
+                            vinicius.2023@alunos.utfpr.edu.br
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

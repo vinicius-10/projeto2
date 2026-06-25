@@ -1,0 +1,97 @@
+
+
+footer{
+    background-color: var(--footer-fundo);
+    color: var(--fundo-card);
+    padding: 30px 12px;
+    display: flex;
+    justify-content: center;
+
+    .footer-container{
+        width: 100%;
+        max-width: var(--max-width);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .footer-brand{
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+
+            .logo-image {
+                width: 6rem;
+                height: auto;
+            }
+
+            .brand-text {
+                display: flex;
+                flex-direction: column;
+
+                h1 {
+    
+                    font-weight: bold;
+                    color: var(--fundo-card);
+                }
+
+                p{
+                    color: var(--fundo-card);
+                    opacity: 0.8;
+                }
+
+                .copyright {
+                    
+                    color: var(--fundo-card);
+                    opacity: 0.6;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .footer-contact{
+            
+            border-left: 1px solid rgba(255, 255, 255, 0.3); 
+            padding-left: 40px;
+            margin-left: 40px;
+            
+            h4 {
+               
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+
+            
+
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                li a {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    color: #ffffff;
+                    text-decoration: none;
+                    
+                    opacity: 0.9;
+                    transition: opacity 0.2s;
+
+                    &:hover {
+                        opacity: 1;
+                        text-decoration: underline;
+                    }
+
+                    .fa-brands, .fa-solid {
+
+                        color: inherit;
+                    }
+                        
+
+                }
+            }
+        }
+    }
+}

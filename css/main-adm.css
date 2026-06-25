@@ -5,7 +5,7 @@ main{
     margin-bottom: 30px;
 
     .main-container{
-        width: 100%;
+        width: 70%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -36,7 +36,7 @@ main{
 
         .forms-container{
             width: 100%;
-            padding: 70px 0px 70px 0px;
+            padding: 50px 0px 50px 0px;
             border-radius: 16px;
             background: var(--fundo-card);
             overflow: hidden;

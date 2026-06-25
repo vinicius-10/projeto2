@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", () =>{
         search()
     })
 
+
+    
     // Recupera os dados salvos e mostra os usuários na página.
     listUser = get_data_localStorage()
     update_list()

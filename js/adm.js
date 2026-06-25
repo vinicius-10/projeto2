@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     })
 
     // Recupera os dados salvos e mostra os usuários na página.
-    listUser = JSON.parse(localStorage.getItem(key))
+    listUser = get_data_localStorage()
     update_list()
 })
 

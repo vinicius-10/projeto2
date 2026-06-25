@@ -6,7 +6,7 @@
     <title>Partência</title>
 
     <link rel="stylesheet" href="css/styles.css"> 
-    <link rel="stylesheet" href="css/main-landingPage.css">
+    <link rel="stylesheet" href="css/main-adm.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=logout">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-
+    <script src="js/adm.js"></script>
 </head>
 
 <body>
@@ -40,7 +40,7 @@
             <nav>
                 <ul>
                     <li>
-                    <a href="index.html" class="btn-sair fontNormal">
+                    <a href="adm.html" class="btn-sair fontNormal">
                         <i class="fa-regular fa-user"></i>
                         ADM
                     </a>
@@ -60,105 +60,45 @@
         <div class="main-container">
             <section class="welkome">
                 <div class="welkome-text">
-                    <h1 class="fontGig">Bem-vindo ao &nbsp;<span class="colorPrimary">Part</span><span class="colorODS">ência</span> </h1>
-                    <p class="fontNormal">
-                        Conecte-se com monitores e alunos e fortaleça sua jornada acadêmica.
-                    </p>
+                    <h1 class="fontGig">Cadastre um novo adm ao &nbsp;<span class="colorPrimary">Part</span><span class="colorODS">ência</span> </h1>
                 </div>
             </section>
 
             <section class="forms-container">
 
-                <div class="panel panel-login" id="panel-login">
-                    <h2 class="fontMedium">Faça seu login</h2>
+                <div class="panel panel-register" id="panel-register">
 
-                    <form id="form-login" action="landingPage.html">
-                        <div class="campos fontNormal">
-                            <label class="campo">
-                            E-mail
-                            <input type="email" placeholder="seu@email.com">
-                            </label>
-                            <label class="campo">
-                            Senha
-                            <input type="password" placeholder="••••••••">
-                            </label>
-                        </div>
-                        <button class="btn-submit fontSmall">Entrar</button>
-                    </form>
-                </div>
-
-                <div class="panel panel-register opacity-0" id="panel-register">
-                    <h2 class="fontMedium">Crie sua conta</h2>
-
-                    <form id="form-register" action="index.html">
+                    <form id="form-register">
                         <div class="campos fontSmall">
                             
                             <label class="campo">
+                                Nome de usuario
+                                <input type="text" placeholder="Nome de usuario" name="username" id="username">
+                            </label>
+
+                            <label class="campo">
                                 E-mail
-                                <input type="email" placeholder="seu@email.com">
-                            </label>
-
-                            <label class="campo">
-                                Nome completo
-                                <input type="text" placeholder="Seu nome completo">
-                            </label>
-
-                            <label class="campo">
-                                Instituição de ensino
-                                <input type="text" placeholder="UTFPR-CP, E.E. Leonardo, etc">
-                            </label>
-
-                            <label class="campo">
-                                Escolaridade
-                                <select>
-                                    <option value="" disabled selected>Selecione</option>
-                                    <option>Ensino médio</option>
-                                    <option>Graduação</option>
-                                    <option>Pós-graduação</option>
-                                    <option>Mestrado</option>
-                                    <option>Doutorado</option>
-                                </select>
-                            </label>
-
-                            <label class="campo">
-                                Curso
-                                <input type="text" placeholder="Nome do curso">
-                            </label>
-
-                            <label class="campo">
-                                Ano de ingresso
-                                <input type="number" placeholder="Ex: 2023" min="2000" max="2099">
-                            </label>
-
-                            <label class="campo">
-                                Senha
-                                <input type="password" placeholder="••••••••">
-                            </label>
-
-                            <label class="campo">
-                                Confirmar senha
-                                <input type="password" placeholder="••••••••">
+                                <input type="text" placeholder="seu@email.com" name="email" id="email">
                             </label>
                             
                         </div>
-                        <button class="btn-submit fontSmall" type="submit">Cadastrar</button>
+                        <button class="btn submit fontSmall" type="submit">Cadastrar</button>
+                        <button class="btn reset fontSmall" type="reset">Limpar</button>
                     </form>
                 </div>
+            </section>
 
-                <div class="slider fontNormal" id="slider">
-
-                    <div class="slider-text visible" id="text-register">
-                        <h2>Não tem conta?</h2>
-                        <p>Cadastre-se e acesse<br>todos os recursos da plataforma</p>
-                        <button class="btn-trocar fontSmall" id="btn-register">Cadastrar</button>
+            <section class="list-container">
+                <div class="list-control fontSmall">
+                    <div class="search ">
+                        <input id="ipt-search" type="text" class="fontSmall"> <button type="button" class="fontSmall" id="btn-search"><i class="fa-solid fa-magnifying-glass"></i> Buscar</button>
                     </div>
-
-                    <div class="slider-text" id="text-login">
-                        <h2>Já tem conta?</h2>
-                        <p>Faça login e continue<br>acessando a plataforma</p>
-                        <button class="btn-trocar fontSmall" id="btn-login">Login</button>
-                    </div>
+                    <button type="button" class="fontSmall" id="reset-list">Limpar lista</button>
+                
                 </div>
+                <ul id="ul-user" class="fontSmall">
+                </ul>
+                
             </section>
             
         </div>
